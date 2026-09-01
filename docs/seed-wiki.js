@@ -1,3 +1,18 @@
+// ============================================================================
+// ⚠️  ONE-TIME SETUP SCRIPT — NOT FOR REGULAR WIKI UPDATES  ⚠️
+// ============================================================================
+// This script is meant to be run ONCE, when the GitHub wiki is first created,
+// to seed it with placeholder starter pages (Home, Getting-Started, etc.).
+//
+// It wipes and re-clones its working directory on every run and blindly
+// overwrites the listed pages with hardcoded template content. Running this
+// again after the wiki already has real content WILL clobber that content.
+//
+// To make ongoing edits to the wiki, edit pages directly (via the GitHub
+// wiki web UI, or by cloning the wiki repo yourself) — do not rerun this
+// script as part of a normal update workflow.
+// ============================================================================
+
 import "dotenv/config"; // Loads .env automatically (shorthand for ES modules)
 import simpleGit from "simple-git";
 import fs from "fs-extra";
@@ -5,7 +20,6 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 
 // ==== CONFIGURATION ==== //
 const GITHUB_USERNAME = process.env.GITHUB_USERNAME;
