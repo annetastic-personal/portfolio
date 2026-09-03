@@ -28,4 +28,7 @@ dist-ssr
 
 # Local deployment notes (do not commit)
 docs/ops/
+docs/wiki
 docs/.wiki-build
+portfolio.wiki/
+wiki_bak/
