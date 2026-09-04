@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import DesignGuide from "./components/DesignGuide";
 import Home from "./pages/Home";
-import MainContainer from "./components/MainContainer";
+import MainContainer from "./components/layout/MainContainer";
 import "./App.css";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <MainContainer>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/designguide" element={<DesignGuide />} />
+          <Route path="/design-guide" element={<DesignGuide />} />
         </Routes>
       </MainContainer>
     </Router>
