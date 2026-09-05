@@ -1,6 +1,24 @@
-console.log("Loaded tailwind.config.js");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  plugins: [require("daisyui")],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          background: "#ffffff",
+          primary: "#2d033b",
+          secondary: "#6366f1",
+          tertiary: "#14b8a6",
+          accent: "#65a30d",
+          highlight: "#ff1fae",
+          text: "#6b6375",
+        },
+      },
+      boxShadow: {
+        soft: "0 4px 24px rgba(0, 0, 0, 0.08)",
+      },
+    },
+  },
   safelist: [
     "bg-white",
     "rounded-2xl",
