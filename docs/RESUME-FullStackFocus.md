@@ -1,6 +1,6 @@
 # **Anne Odom** (she/her)
 
-*Live curiously. Create with compassion. Bring joy.*
+*Live curious. Create with compassion. Bring joy.*
 
 # ---
 

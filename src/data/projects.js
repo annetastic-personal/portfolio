@@ -87,7 +87,7 @@ const projects = [
     projectStatus: {
       type: "maintenance",
       message:
-        "The public deployment is undergoing maintenance before the forecasting feature can be demonstrated. Screenshots show currently accessible parts of the application.",
+        "Developed by me and currently maintained by another developer. The public deployment is undergoing maintenance before the forecasting feature can be demonstrated. Screenshots show currently accessible parts of the application.",
     },
   },
 ];
