@@ -3,10 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --text: var(--palette-6);
   --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
@@ -15,14 +12,6 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  /* Portfolio color palette */
-  --palette-1: #2d033b; /* Deep purple - backgrounds, header/footer */
-  --palette-2: #6366f1; /* Indigo - headings, links */
-  --palette-3: #14b8a6; /* Teal - secondary buttons, highlights */
-  --palette-4: #65a30d; /* Deeper lime - badges, testimonials (distinctive) */
-  --palette-5: #ff1fae; /* Brighter magenta - highlights, section titles */
-  --palette-6: #6b6375; /* Default text color */
-
   --sans: system-ui, "Segoe UI", Roboto, sans-serif;
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
@@ -30,8 +19,6 @@
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -44,10 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
     --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
     --code-bg: #1f2028;
     --accent: #c084fc;
     --accent-bg: rgba(192, 132, 252, 0.15);
@@ -64,7 +48,7 @@
 
 body {
   margin: 0;
-  background: var(--palette-1);
+  @apply bg-brand-primary;
   line-height: 150%;
 }
 
@@ -72,10 +56,8 @@ body {
   width: 1126px;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
-  /* border-inline: 1px solid var(--border); */
   /* min-height: 100svh; */
-  height: 100vh;
+  min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -91,28 +73,24 @@ h1 {
   font-weight: 500;
   font-size: 32px;
   line-height: 110%;
-  color: var(--palette-1); /* Deep Purple */
 }
 h2 {
   font-family: var(--heading);
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;
-  color: var(--palette-2); /* Indigo */
 }
 h3 {
   font-family: var(--heading);
   font-weight: 500;
   font-size: 20px;
   line-height: 130%;
-  color: var(--palette-3); /* Teal */
 }
 h4 {
   font-family: var(--heading);
   font-weight: 500;
   font-size: 18px;
   line-height: 130%;
-  color: var(--palette-4); /* Deep Green */
 }
 p {
   margin: 0;
@@ -131,102 +109,4 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
-}
-
-/* Global link color using palette-3 (teal) */
-a {
-  color: var(--palette-3);
-  text-decoration: underline;
-  transition: color 0.2s;
-}
-a:hover,
-a:focus {
-  color: var(--palette-2); /* Indigo on hover/focus */
-}
-
-/* Global secondary button class */
-.button-secondary {
-  background: var(--palette-2);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  font-size: 15px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-.button-secondary:hover,
-.button-secondary:focus {
-  background: var(--palette-3); /* Teal on hover/focus */
-}
-
-/* Global primary button class */
-.button-primary {
-  background: var(--palette-4);
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  font-size: 15px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-.button-primary:hover,
-.button-primary:focus {
-  background: var(--palette-2); /* Indigo on hover/focus */
-}
-
-/* Global badge class */
-.badge {
-  background: var(--palette-5); /* Magenta */
-  color: #fff;
-  border-radius: 4px;
-  padding: 0.25em 0.75em;
-  font-size: 14px;
-  display: inline-block;
-}
-
-/* Global section title class (indigo) */
-.section-title {
-  color: var(--palette-2);
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin: 8px 0 4px 0;
-  display: inline-block;
-}
-
-/* Header/Footer background class */
-.header-footer-bg {
-  background: var(--palette-1);
-  color: #fff;
-}
-
-/* White text on dark backgrounds (e.g., palette-1) */
-.on-dark-bg {
-  color: #fff !important;
-}
-
-/* Global cancel/close button class */
-.button-cancel {
-  background: var(--palette-6); /* Slate */
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  font-size: 15px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background 0.2s;
-}
-.button-cancel:hover,
-.button-cancel:focus {
-  background: var(--palette-1); /* Deep Purple on hover/focus */
-}
-
-button,
-.button-primary,
-.button-secondary,
-.button-cancel {
-  font-weight: 700;
 }

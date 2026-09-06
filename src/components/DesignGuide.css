@@ -41,14 +41,13 @@
   justify-content: flex-start;
   outline: none;
   background: none;
-  border-bottom: 1px solid var(--palette-6); /* Slate dividing line */
 }
 
 .palette-table-row:last-child {
   border-bottom: none;
 }
 
-/* Add bottom padding to column 3 in rows 1 and 2 (palette-1 and palette-2) */
+/* Add bottom padding to column 3 in the first two rows. */
 .palette-table-row:nth-child(1) .palette-table-sample,
 .palette-table-row:nth-child(2) .palette-table-sample {
   padding-bottom: 8px;
@@ -72,33 +71,6 @@
   width: 180px;
   min-width: 0;
   align-items: flex-start;
-}
-
-/* Palette sample elements */
-.palette-sample-heading1 {
-  color: var(--palette-1);
-  margin: 0;
-}
-.palette-sample-heading2 {
-  color: var(--palette-2);
-  margin: 0;
-}
-.palette-sample-heading3 {
-  color: var(--palette-3);
-  margin: 0;
-}
-.palette-sample-heading4 {
-  color: var(--palette-4);
-  margin: 0;
-}
-.palette-sample-heading5 {
-  color: var(--palette-5);
-  margin: 0;
-  font-weight: 700;
-}
-.palette-sample-default-text {
-  color: var(--palette-6);
-  font-size: 16px;
 }
 
 /* Palette sample elements in palette-table-sample */
