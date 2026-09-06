@@ -30,6 +30,8 @@ Deliver a public, employment-focused portfolio by September 10, 2026, for inclus
 
 ## Deferred Work
 
+- Create and execute the future testing and quality plan in `docs/planning/Testing-and-Quality-Plan.md` after the MVP release.
+- Consolidate on Tailwind's config as the single source of truth for color/design tokens and configure a custom daisyUI theme, per `docs/planning/CSS-Tailwind-Refactor-Plan.md`, after the MVP release.
 - Add an illustrated personal avatar.
 - Add an easy-to-run project-content script.
 - Add a project-content web interface.

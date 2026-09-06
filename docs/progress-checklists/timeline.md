@@ -24,26 +24,35 @@ This schedule prioritizes the MVP acceptance criteria: a polished main page, at 
 
 ### Goals
 
-- [ ] Establish the light-theme visual direction and shared site layout.
-- [ ] Build the main-page introduction, navigation, About Me, skills, contact, and resume/profile link areas.
-- [ ] Add the structured project data for TTGCollector and Pest Degree Day Calculator.
-- [ ] Implement the reusable project-card component and feature TTGCollector first.
+- [x] Establish the light-theme visual direction and shared site layout. (Palette, Tailwind config, and shared `MainContainer` are done; `SiteHeader`/`SiteFooter` are still empty stubs.)
+- [ ] Build the main-page introduction, navigation, About Me, skills, contact, and resume/profile link areas. (Hero intro and About Me exist on `Home.jsx`; navigation, skills, contact, and resume/profile links are not yet built.)
+- [x] Add the structured project data for TTGCollector and Pest Degree Day Calculator. (`projects.js` is fully structured for both projects: summaries, tech, features, images, links.)
+- [x] Implement the reusable project-card component and feature TTGCollector first. (`ProjectCard.jsx` renders both featured projects on `Home`.)
 
 ### Completion Check
 
 - [ ] Confirm the main page explains the target role and strongest work within the first screen.
-- [ ] Confirm both project cards show a summary, visual preview placeholder or final image, technologies, and independent details, live, and source actions where applicable.
+- [x] Confirm both project cards show a summary, visual preview placeholder or final image, technologies, and independent details, live, and source actions where applicable.
 
-## Sunday, September 6 (0 hours)
+## Sunday, September 6 (3 hours) — catch-up for unfinished Saturday goals
 
-### Goal
+### Goals (priority order; cut from the bottom if time runs out)
 
-- [ ] Keep the day free. Do not plan critical implementation or validation work for this date.
+- [x] Build the reusable `ProjectCard` component and render TTGCollector on the main page, wired to details/live/source actions (placeholder routes are fine for now). This unblocks Monday's routing and details-page work.
+- [ ] Add the skills, contact, and resume/profile link areas to the main page using the content already drafted on Friday.
+- [ ] If time remains: build the navigation and header/footer. If not, defer this to the start of Monday or fold it into Wednesday's responsive/accessibility review.
 
-## Monday, September 7 (4-6 hours)
+### Completion Check
+
+- [x] Confirm the TTGCollector card renders on the main page with working details/live/source actions.
+- [ ] Confirm resume, contact, and skills are visible on the main page.
+- [ ] Note whether navigation/header/footer were completed today or deferred, and to which day.
+
+## Monday, September 7 (6-8 hours)
 
 ### Goals
 
+- [ ] If navigation/header/footer were deferred from Sunday, complete them first (budget ~30-45 minutes) before starting routing work.
 - [ ] Configure client-side routing with stable URLs under `/projects/{project-slug}`.
 - [ ] Build the reusable project-details page structure.
 - [ ] Complete the TTGCollector project-details page, including purpose, features, technologies, architecture, contributions, screenshots, and available links.
@@ -74,7 +83,7 @@ This schedule prioritizes the MVP acceptance criteria: a polished main page, at 
 
 - [ ] Decide whether the Excel sheet parser is presentation-ready; add it only if it does not delay the two-project MVP.
 - [ ] Complete responsive layout work for desktop, tablet, and mobile widths.
-- [ ] Perform the accessibility and content review: keyboard navigation, focus visibility, link labels, contrast, heading structure, copy, and layout overflow.
+- [ ] Perform the accessibility and content review: keyboard navigation, focus visibility, link labels, contrast, heading structure, copy, and layout overflow. If navigation/header/footer polish was deferred earlier in the week, finish it as part of this review.
 - [ ] Test every external link, resume link, project-details route, live application, and source repository link.
 - [ ] Run the production build and resolve MVP-blocking defects.
 
@@ -83,7 +92,7 @@ This schedule prioritizes the MVP acceptance criteria: a polished main page, at 
 - [ ] Confirm the two-project MVP meets the acceptance criteria locally.
 - [ ] Confirm any third project is included only when its page, images, links, and content are presentation-ready.
 
-## Thursday, September 10 (4-6 hours)
+## Thursday, September 10 (6-8 hours)
 
 ### Goals
 
