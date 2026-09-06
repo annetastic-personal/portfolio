@@ -1,7 +1,7 @@
 import ttgFullCollection from "../assets/images/projects/ttgcollector/main-page-full-collection.png";
 import ttgFilteredCollection from "../assets/images/projects/ttgcollector/main-with-filters.png";
-import ttgSearchForm from "../assets/images/projects/ttgcollector/bbgsearchform.png";
-import ttgDetailsForm from "../assets/images/projects/ttgcollector/bbgdetailsform.png";
+import ttgSearchForm from "../assets/images/projects/ttgcollector/bggsearchform.png";
+import ttgDetailsForm from "../assets/images/projects/ttgcollector/bggdetailsform.png";
 import pddSinglePest from "../assets/images/projects/pest-degree-day-calculator/single-pest.png";
 import pddMap from "../assets/images/projects/pest-degree-day-calculator/map-sample.png";
 
