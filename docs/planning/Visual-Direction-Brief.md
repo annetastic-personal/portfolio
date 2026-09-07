@@ -99,28 +99,28 @@ Starting semantic role map:
 
 | Token              | Current color                                                                                                                                               | Use                                                                       |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `page-background`  | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#ffffff;border:1px solid #6b6375;" aria-label="White swatch"></span> `#ffffff` | Main page canvas                                                          |
-| `text-primary`     | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#2d033b;" aria-label="Dark purple swatch"></span> `#2d033b`                    | Headings, body copy, project descriptions, and other essential content    |
-| `text-secondary`   | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#6b6375;" aria-label="Muted purple-gray swatch"></span> `#6b6375`              | Metadata, captions, labels, helper text, and other supporting information |
-| `surface-header`   | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#ffffff;border:1px solid #6b6375;" aria-label="White swatch"></span> `#ffffff` | Header background or header emphasis                                      |
-| `surface-footer`   | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#6366f1;" aria-label="Indigo swatch"></span> `#6366f1`                         | Footer background or deep visual anchor; matches `action-secondary`       |
-| `surface-emphasis` | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#14b8a6;" aria-label="Teal swatch"></span> `#14b8a6`                           | Featured panels or joyful emphasis                                        |
+| `page-background`  | ![White swatch](../assets/White_ffffff.svg) `#ffffff` | Main page canvas                                                          |
+| `text-primary`     | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` | Headings, body copy, project descriptions, and other essential content    |
+| `text-secondary`   | ![Muted purple-gray swatch](../assets/MutedPurpleGray_6b6375.svg) `#6b6375` | Metadata, captions, labels, helper text, and other supporting information |
+| `surface-header`   | ![White swatch](../assets/White_ffffff.svg) `#ffffff` | Header background or header emphasis                                      |
+| `surface-footer`   | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` | Footer background or deep visual anchor; matches `action-secondary`       |
+| `surface-emphasis` | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` | Featured panels or joyful emphasis                                        |
 | `surface-card`     | ![Surface card lavender swatch](../assets/SurfaceCard_e0d9e2.svg) `#e0d9e2` | Project cards; derived as a 15% tint of `text-primary` (`#2d033b`) blended with white |
-| `action-primary`   | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#65a30d;" aria-label="Green swatch"></span> `#65a30d`                          | Primary buttons, highest-priority actions, and positive status            |
-| `action-secondary` | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#6366f1;" aria-label="Indigo swatch"></span> `#6366f1`                         | Supporting buttons and secondary actions                                  |
-| `link`             | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#ff1fae;" aria-label="Pink swatch"></span> `#ff1fae`                           | Text links and navigation links; use a persistent underline               |
-| `focus`            | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#2d033b;" aria-label="Dark purple swatch"></span> `#2d033b`                    | Keyboard focus indicator, separate from link color                        |
-| `border-subtle`    | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#6b6375;" aria-label="Muted purple-gray swatch"></span> `#6b6375`              | Quiet borders and content separation                                      |
-| `border-emphasis`  | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#14b8a6;" aria-label="Teal swatch"></span> `#14b8a6`                           | Stronger borders or intentional card accents                              |
+| `action-primary`   | ![Green swatch](../assets/Green_65a30d.svg) `#65a30d` | Primary buttons, highest-priority actions, and positive status            |
+| `action-secondary` | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` | Supporting buttons and secondary actions                                  |
+| `link`             | ![Pink swatch](../assets/Pink_ff1fae.svg) `#ff1fae` | Text links and navigation links; use a persistent underline               |
+| `focus`            | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` | Keyboard focus indicator, separate from link color                        |
+| `border-subtle`    | ![Muted purple-gray swatch](../assets/MutedPurpleGray_6b6375.svg) `#6b6375` | Quiet borders and content separation                                      |
+| `border-emphasis`  | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` | Stronger borders or intentional card accents                              |
 
 Heading color map:
 
 | Heading | Current color                                                                                                                                                   |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `h1`    | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#2d033b;" aria-label="Dark purple swatch"></span> `#2d033b` (`text-primary`)       |
-| `h2`    | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#6366f1;" aria-label="Indigo swatch"></span> `#6366f1` (`surface-footer`)          |
-| `h3`    | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#14b8a6;" aria-label="Teal swatch"></span> `#14b8a6` (`surface-emphasis`)          |
-| `h4`    | <span style="display:inline-block;width:3rem;height:1.25rem;background-color:#2d033b;" aria-label="Dark purple swatch"></span> `#2d033b` (`text-primary`), bold |
+| `h1`    | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` (`text-primary`) |
+| `h2`    | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` (`surface-footer`) |
+| `h3`    | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` (`surface-emphasis`) |
+| `h4`    | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` (`text-primary`), bold |
 
 Use the semantic role names when choosing styles. Keep the existing `brand.*` names as implementation details until the design-token refactor is planned.
 
