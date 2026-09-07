@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  a:not(.btn) {
+    @apply font-bold text-link text-link-size underline underline-offset-2;
+  }
+
+  a:not(.btn):hover {
+    @apply decoration-2 underline-offset-4;
+  }
+
+  a:not(.btn):focus-visible {
+    @apply rounded-sm decoration-2 underline-offset-4 outline-none ring-2 ring-focus ring-offset-2;
+  }
+}
+
 :root {
   --text-h: #08060d;
   --code-bg: #f4f3ec;
@@ -12,21 +26,12 @@
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, "Segoe UI", Roboto, sans-serif;
-  --heading: system-ui, "Segoe UI", Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
-
-  font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -48,12 +53,11 @@
 
 body {
   margin: 0;
-  @apply bg-brand-primary;
-  line-height: 150%;
+  @apply bg-page-background;
+  @apply font-sans text-body font-normal;
 }
 
 #root {
-  width: 1126px;
   max-width: 100%;
   margin: 0 auto;
   /* min-height: 100svh; */
@@ -64,34 +68,6 @@ body {
   /* background: #fff; */
 }
 
-p {
-  margin: 0;
-}
-
-h1 {
-  font-family: var(--heading);
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 110%;
-}
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 130%;
-}
-h3 {
-  font-family: var(--heading);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-}
-h4 {
-  font-family: var(--heading);
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 130%;
-}
 p {
   margin: 0;
 }

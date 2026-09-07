@@ -2,7 +2,7 @@
 
 ## Status
 
-Working brief for the September 10 employment-portfolio MVP. Confirmed decisions are recorded below; open questions identify decisions still needed before implementation.
+Working brief for the September 10 employment-portfolio MVP. Confirmed decisions and starting values are recorded below; validate them against real content and rendered layouts as the site develops.
 
 ## 1. Visual Thesis and Keywords
 
@@ -55,10 +55,6 @@ Confirmed keywords: approachable, curious, warm, friendly, compassionate, joyful
 | --------------- | ------------------ |
 | Body            | `1rem` / `1.6`     |
 | Supporting text | `0.875rem` / `1.4` |
-| Project title   | `1.25rem` / `1.25` |
-| Section heading | `1.75rem` / `1.2`  |
-| Page title      | `2.5rem` / `1.1`   |
-| Hero title      | `3.5rem` / `1.05`  |
 
 ### Heading Hierarchy
 
@@ -83,7 +79,6 @@ Confirmed keywords: approachable, curious, warm, friendly, compassionate, joyful
 - Prioritize the shared scale and consistent component rules over one-off adjustments.
 - Adjust type scale or measure only when content, wrapping, or readability demonstrates a need.
 - Validate typography across desktop, tablet, mobile, and increased browser zoom.
-- Do not use monospace for general content, navigation, project descriptions, or code samples.
 
 ## 3. Neutral Foundation and Accent Colors
 
@@ -97,45 +92,30 @@ Confirmed direction:
 
 Starting semantic role map:
 
-| Token              | Current color                                                                                                                                               | Use                                                                       |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
-| `page-background`  | ![White swatch](../assets/White_ffffff.svg) `#ffffff` | Main page canvas                                                          |
-| `text-primary`     | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` | Headings, body copy, project descriptions, and other essential content    |
-| `text-secondary`   | ![Muted purple-gray swatch](../assets/MutedPurpleGray_6b6375.svg) `#6b6375` | Metadata, captions, labels, helper text, and other supporting information |
-| `surface-header`   | ![White swatch](../assets/White_ffffff.svg) `#ffffff` | Header background or header emphasis                                      |
-| `surface-footer`   | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` | Footer background or deep visual anchor; matches `action-secondary`       |
-| `surface-emphasis` | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` | Featured panels or joyful emphasis                                        |
+| Token              | Current color                                                               | Use                                                                                   |
+| ------------------ | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| `page-background`  | ![White swatch](../assets/White_ffffff.svg) `#ffffff`                       | Main page canvas                                                                      |
+| `text-primary`     | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b`            | Headings, body copy, project descriptions, and other essential content                |
+| `text-secondary`   | ![Muted purple-gray swatch](../assets/MutedPurpleGray_6b6375.svg) `#6b6375` | Metadata, captions, labels, helper text, and other supporting information             |
+| `surface-header`   | ![White swatch](../assets/White_ffffff.svg) `#ffffff`                       | Header background or header emphasis                                                  |
+| `surface-footer`   | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1`                     | Footer background or deep visual anchor; matches `action-secondary`                   |
+| `surface-emphasis` | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6`                         | Featured panels or joyful emphasis                                                    |
 | `surface-card`     | ![Surface card lavender swatch](../assets/SurfaceCard_e0d9e2.svg) `#e0d9e2` | Project cards; derived as a 15% tint of `text-primary` (`#2d033b`) blended with white |
-| `action-primary`   | ![Green swatch](../assets/Green_65a30d.svg) `#65a30d` | Primary buttons, highest-priority actions, and positive status            |
-| `action-secondary` | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` | Supporting buttons and secondary actions                                  |
-| `link`             | ![Pink swatch](../assets/Pink_ff1fae.svg) `#ff1fae` | Text links and navigation links; use a persistent underline               |
-| `focus`            | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` | Keyboard focus indicator, separate from link color                        |
-| `border-subtle`    | ![Muted purple-gray swatch](../assets/MutedPurpleGray_6b6375.svg) `#6b6375` | Quiet borders and content separation                                      |
-| `border-emphasis`  | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` | Stronger borders or intentional card accents                              |
+| `action-primary`   | ![Green swatch](../assets/Green_65a30d.svg) `#65a30d`                       | Primary buttons, highest-priority actions, and positive status                        |
+| `action-secondary` | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1`                     | Supporting buttons and secondary actions                                              |
+| `link`             | ![Pink swatch](../assets/Pink_ff1fae.svg) `#ff1fae`                         | Text links and navigation links; use a persistent underline                           |
+| `focus`            | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b`            | Keyboard focus indicator, separate from link color                                    |
+| `border-subtle`    | ![Muted purple-gray swatch](../assets/MutedPurpleGray_6b6375.svg) `#6b6375` | Quiet borders and content separation                                                  |
+| `border-emphasis`  | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6`                         | Stronger borders or intentional card accents                                          |
 
 Heading color map:
 
-| Heading | Current color                                                                                                                                                   |
-| ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `h1`    | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` (`text-primary`) |
-| `h2`    | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` (`surface-footer`) |
-| `h3`    | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` (`surface-emphasis`) |
+| Heading | Current color                                                                           |
+| ------- | --------------------------------------------------------------------------------------- |
+| `h1`    | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` (`text-primary`)       |
+| `h2`    | ![Indigo swatch](../assets/Indigo_6366f1.svg) `#6366f1` (`surface-footer`)              |
+| `h3`    | ![Teal swatch](../assets/Teal_14b8a6.svg) `#14b8a6` (`surface-emphasis`)                |
 | `h4`    | ![Dark purple swatch](../assets/DarkPurple_2d033b.svg) `#2d033b` (`text-primary`), bold |
-
-Use the semantic role names when choosing styles. Keep the existing `brand.*` names as implementation details until the design-token refactor is planned.
-
-Starting accessibility treatment:
-
-- Keep `link` and `focus` as separate semantic roles even when they appear on the same element.
-- Use a visible `2px` focus outline with approximately `3px` offset as the initial focus treatment.
-- Do not communicate focus through color change alone.
-- Validate `#ff1fae` for normal-sized link text on white and other light surfaces; keep the underline even if the color passes.
-
-Open decisions:
-
-- Contrast-safe text pairings for the bright surfaces and actions.
-- Whether the starting role assignments need adjustment after visual implementation.
-- How much bright color is appropriate in the first viewport.
 
 ## 4. Color Roles and Accessibility Rules
 
@@ -149,103 +129,122 @@ Confirmed rules:
 - Avoid color choices that create problems for colorblind visitors.
 - Validate text, controls, links, cards, images, and focus indicators at mobile and desktop sizes.
 
-Open decisions:
+Provisional pairings:
 
-- Contrast targets for text, controls, borders, and decorative accents.
-- Accessible pairings for each bright accent.
-- Error/status treatment.
-- Whether each accent needs a text label, icon, pattern, border, or other non-color cue.
+| Element or role | Starting treatment                                                                                   |
+| --------------- | ---------------------------------------------------------------------------------------------------- |
+| Main text       | `text-primary`                                                                                       |
+| Supporting text | `text-secondary`, only for metadata, captions, labels, helper text, and other supporting information |
+| Card text       | `text-primary` on `surface-card`                                                                     |
+| Links           | `link` with a persistent underline                                                                   |
+| Keyboard focus  | `focus` with a visible `2px` outline and approximately `3px` offset                                  |
+| Bright surfaces | Test text pairings independently; do not assume white text is accessible                             |
+
+Visual samples:
+
+![Accessibility role samples](../assets/AccessibilitySamples.svg)
+
+Implementation validation:
+
+- Validate `#ff1fae` for normal-sized link text on white and other light surfaces; keep the underline even if the color passes.
+- Validate text, controls, borders, focus indicators, and status treatments against their actual backgrounds.
+- Give every meaningful image a meaningful alternative text description.
+- Add a text label, icon, pattern, border, or other non-color cue whenever color communicates meaning.
+- Adjust pairings during implementation when contrast, color perception, or readability requires it.
 
 ## 5. Spacing and Layout Rules
 
+Main principle:
+
+> Keep the homepage compact enough for quick evaluation while using whitespace, color, screenshots, and typography to make the experience visually interesting.
+
+Inspiration reference:
+
+- [Ryan Z Wade portfolio](https://ryanzwade.com/): use its straightforward content sequence and simple presentation as inspiration.
+
 Confirmed direction:
 
-- Use generous whitespace while keeping the recruiter-facing content efficient to scan.
-- Maintain clear visual hierarchy and consistent spacing.
-- Keep the first screen focused on the professional purpose and strongest work.
-- Support desktop, tablet, and mobile widths without clipping, overlap, or unstable layout.
-- Prefer simple, reliable composition over dense case-study presentation.
+- Present the summary blurb, skills, and two compact project cards on the main page.
+- Keep each project card focused on the project name, short summary, one screenshot, technical skills used, and links to further details.
+- Provide visible email and professional links.
+- Maintain clear hierarchy, consistent spacing, and stable layouts across desktop, tablet, and mobile.
 
-Open decisions:
+Starting layout values:
 
-- Maximum content width.
-- Page gutters at each responsive breakpoint.
-- Section spacing scale.
-- Hero composition and first-screen height.
-- Project-card grid behavior and breakpoint changes.
-- Text measure for introductions, About content, and project details.
+| Decision              | Starting value                                                               | Why                                                                                               |
+| --------------------- | ---------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Maximum content width | `72rem`                                                                      | Gives two cards room to sit together without stretching text too wide.                            |
+| Page gutters          | `1rem` mobile, `1.5rem` tablet, `2rem` desktop                               | Protects content from screen edges with one predictable responsive rule.                          |
+| Shared spacing rhythm | `0.75rem`, `1.5rem`, `4rem`, `6rem`                                          | Creates consistent relationships between details, components, sections, and major page areas.     |
+| First-screen height   | Content-driven; no fixed hero height                                         | Keeps the summary and relevant work visible without a large image pushing content below the fold. |
+| Summary composition   | Compact professional summary, skills preview, and early resume/action access | Lets visitors understand who you are and what you offer during a quick scan.                      |
+| Project-card grid     | One column below `48rem`; two columns at `48rem` and above                   | Keeps two projects comparable on larger screens and readable on narrow screens.                   |
+
+Validate these starting values during implementation and adjust them only when real content, wrapping, or responsive behavior demonstrates a need.
 
 ## 6. Component and Surface Treatments
 
-Confirmed direction:
+Starting component treatments:
 
-- Project cards should be concise, scannable, and visually consistent.
-- Each card should keep details, live-application, and source links separate and independently accessible.
-- Interactions should be lightweight and purposeful.
-- Images should show the actual application or relevant work and include meaningful alternative text.
-- Use Tailwind utilities and daisyUI patterns consistently with the repository convention.
+| Decision                   | Starting treatment                                                                                     | Why                                                                                 |
+| -------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
+| Card background            | `surface-card` (`#e0d9e2`)                                                                             | Separates cards from the white page while keeping the palette quiet.                |
+| Border                     | `1px solid border-subtle`                                                                              | Gives each card a reliable boundary without relying on the lavender fill alone.     |
+| Radius                     | `0.5rem` / `8px`                                                                                       | Adds warmth while keeping the card crisp and restrained.                            |
+| Shadow                     | None by default; use only a very soft shadow if needed                                                 | Preserves the editorial feel and avoids a floating-dashboard look.                  |
+| Card padding               | Shared spacing rule starting around `1.5rem`                                                           | Creates consistent internal breathing room without one-off tuning.                  |
+| Primary action             | `action-primary` for the details action; `action-secondary` for supporting actions                     | Makes the project-details path primary while keeping live/source links independent. |
+| Links                      | `link` color with persistent underline                                                                 | Keeps link identity clear and accessible.                                           |
+| Technology indicators      | Compact text badges with restrained borders or pale tints                                              | Keeps technical metadata scannable without making every technology visually loud.   |
+| Screenshot ratio           | Start around `16:10` or `3:2` in a stable frame                                                        | Shows useful application detail while keeping cards visually consistent.            |
+| Screenshot crop            | Preserve the full image where possible; crop only intentionally                                        | Protects screenshots as evidence of the actual work.                                |
+| Captions                   | Show only when they add context; always keep meaningful alt text                                       | Avoids duplicate copy while preserving interpretation and accessibility.            |
+| Hover state                | Small elevation or border/accent change without dramatic movement                                      | Adds feedback without making cards unstable.                                        |
+| Pressed state              | Slight elevation reduction or border adjustment                                                        | Confirms interaction without shifting the layout.                                   |
+| Disabled/unavailable state | Clear status label with muted treatment; keep project information accessible                           | Communicates availability without hiding or presenting a broken project.            |
+| Focus state                | Follow section 4’s visible focus rule                                                                  | Keeps keyboard behavior consistent across the site.                                 |
+| Bright accents             | Use for labels, borders, small rules, and selected actions; keep `surface-card` as the main background | Preserves whimsy without making every card visually loud.                           |
 
-Open decisions:
-
-- Card border, radius, shadow, and background treatment.
-- Button and link hierarchy.
-- Badge and technology-indicator treatment.
-- Image aspect ratio, crop behavior, and caption treatment.
-- Hover, focus, pressed, disabled, and unavailable states.
-- Whether bright accents appear on cards as borders, labels, backgrounds, or image treatments.
+Validate these starting treatments during implementation and adjust them only when real content, contrast, or interaction behavior demonstrates a need.
 
 ## 7. Header, Footer, and Mobile Navigation
 
-Confirmed direction:
+Starting site-shell treatments:
 
-- Navigation should be simple and intuitive.
-- The resume link belongs in the main navigation.
-- GitHub and LinkedIn belong in the appropriate professional/contact areas.
-- Email should be visible and should not depend on a mailto link.
-- The site shell must remain usable at mobile widths.
+| Decision          | Starting treatment                                                                                 | Why                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Header layout     | Compact white header with identity on the left and primary navigation on the right                 | Keeps the site shell useful without competing with the summary or projects.              |
+| Header behavior   | Normal document flow; consider sticky behavior only if the finished page is long enough to benefit | Avoids covering content and preserves the simple editorial structure.                    |
+| Navigation        | `Home`, `About`, `Projects`, and `Resume`, with resume visually emphasized                         | Supports recruiter scanning and keeps the information architecture direct.               |
+| Mobile navigation | Menu button that opens a vertical list of the same links                                           | Preserves the desktop structure without squeezing links into a narrow row.               |
+| Footer            | `surface-footer` indigo with email, GitHub, LinkedIn, resume, and a short site note                | Provides a clear final contact point without a contact form.                             |
+| Tagline placement | One prominent appearance near the summary or About area; optional subtle footer reuse              | Gives the values emotional visibility without repeating the slogan throughout the shell. |
+| Accessibility     | Use section 4’s focus, expanded-state, link, and contrast rules                                    | Keeps site-shell behavior consistent with the rest of the interface.                     |
 
-Open decisions:
-
-- Header layout and visual weight.
-- Whether the header is fixed, sticky, or in normal document flow.
-- Navigation links and their order.
-- Mobile navigation pattern.
-- Footer content, grouping, and visual relationship to the header.
-- How the tagline appears in the site shell, hero, or About section.
+Validate these starting treatments during implementation and adjust them only when content, responsive behavior, or accessibility demonstrates a need.
 
 ## 8. Motion and Interaction Principles
 
-Confirmed direction:
+Starting MVP motion treatment:
 
-- Prioritize speed, clarity, accessibility, and reliable navigation.
-- Keep interactions lightweight and purposeful.
-- Do not use automatic image rotation.
-- Image galleries, when used, change only in response to visitor interaction and must be keyboard accessible.
+| Decision         | Starting treatment                                                                      | Why                                                                      |
+| ---------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| Page-load motion | None beyond the browser’s normal page rendering                                         | Keeps content immediately available and protects the quick-scan goal.    |
+| Section reveals  | Defer until layout, content, and navigation are stable                                  | Keeps polish work from competing with MVP structure.                     |
+| Transitions      | `150ms`-`200ms` for hover and focus color, border, or shadow changes                    | Adds responsive feedback without making ordinary interaction feel slow.  |
+| Layout movement  | Avoid layout-shifting hover and focus effects                                           | Keeps cards, links, and controls stable while people scan or navigate.   |
+| Reduced motion   | Disable nonessential transitions and reveal motion for `prefers-reduced-motion: reduce` | Respects visitor preferences and reduces cognitive or vestibular burden. |
+| Image movement   | No automatic rotation; change gallery images only after visitor interaction             | Keeps control with the visitor and preserves predictable presentation.   |
 
-Open decisions:
+Motion principle:
 
-- Whether page-load or section-reveal motion is needed.
-- Transition duration and easing.
-- Hover and focus motion for cards, links, and buttons.
-- Reduced-motion behavior.
-- Whether motion is part of the MVP or deferred until after the layout is stable.
+> Use motion to clarify state or add a small amount of warmth, never to delay, distract from, or replace content.
 
-## 9. Boundaries and Anti-Patterns
+## 9. Boundaries and MVP Priorities
 
-Avoid:
+Keep the MVP focused on clear professional presentation, accessible interaction, and two polished project stories. Add visual personality through deliberate color, typography, whitespace, and small details; defer enhancements that do not materially improve the employment portfolio before the deadline.
 
-- Dense case-study layouts that slow evaluation.
-- Generic template styling without a deliberate visual direction.
-- Excessive visual or interactive complexity.
-- Bright color on every surface or uncontrolled use of the full palette.
-- Accessibility problems caused by color, motion, contrast, focus, or responsive behavior.
-- Ambiguous or nested interactive controls in project cards.
-- Layouts that clip, overlap, or become difficult to scan on mobile.
-
-Deferred from the MVP:
-
-- Dark/light theme toggle.
-- Illustrated avatar.
-- Content-management tooling.
-- Third-project expansion when its page, images, links, and content are not presentation-ready.
-- Elaborate galleries or animation that do not materially improve project evaluation.
+| Area          | Starting boundary                                                                               | Why                                                           |
+| ------------- | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| Scope         | Prioritize the two-project employment MVP before additional features                            | Protects the application deadline and keeps the work focused. |
+| Deferred work | Defer dark mode, avatar work, CMS features, and a third project unless it is presentation-ready | Keeps optional work from displacing the core portfolio.       |

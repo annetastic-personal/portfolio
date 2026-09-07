@@ -24,3 +24,8 @@ Consolidate on Tailwind's config (`tailwind.config.js`) as the single source of 
 
 - Dark/light theme toggle feature work (tracked separately in the main Implementation Plan's Deferred Work).
 - Any new visual design decisions — this is a consolidation/cleanup pass on the existing brand palette, not a redesign.
+
+## Follow-up Notes from Visual Direction Brief
+
+- Preserve the human-facing semantic color-role names when mapping the existing `brand.*` implementation tokens into the consolidated design-token system.
+- Preserve the browser-safe primary font stack and treat monospace as optional decoration for small technical details only; do not introduce it for general content or code samples.
