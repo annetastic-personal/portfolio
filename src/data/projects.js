@@ -4,6 +4,8 @@ import ttgSearchForm from "../assets/images/projects/ttgcollector/bggsearchform.
 import ttgDetailsForm from "../assets/images/projects/ttgcollector/bggdetailsform.png";
 import pddSinglePest from "../assets/images/projects/pest-degree-day-calculator/single-pest.png";
 import pddMap from "../assets/images/projects/pest-degree-day-calculator/map-sample.png";
+import ttgCardThumb from "../assets/images/projects/ttgcollector/main-page-thumb.png";
+import pddCardThumb from "../assets/images/projects/pest-degree-day-calculator/map-thumbnail.png";
 
 const projects = [
   {
@@ -25,6 +27,10 @@ const projects = [
       "Session-based auth",
       "BoardGameGeek API integration to auto-populate game data by game name",
     ],
+    coverImage: {
+      src: ttgCardThumb,
+      alt: "Web page displaying a board game and left-margin filter control",
+    },
     images: [
       {
         src: ttgFullCollection,
@@ -70,6 +76,10 @@ const projects = [
       "ASP.NET application backed by Microsoft SQL Server for pest and historical activity data.",
       "Forecasting workflow combined pest-development thresholds with NOAA API weather inputs to calculate near-term activity predictions.",
     ],
+    coverImage: {
+      src: pddCardThumb,
+      alt: "Web page displaying a heat map of past activity",
+    },
     images: [
       {
         src: pddSinglePest,

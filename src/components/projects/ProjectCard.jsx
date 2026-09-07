@@ -7,35 +7,40 @@ function renderActionLink(url, label) {
   }
 
   return (
-    <a href={url} target="_blank" rel="noreferrer" className="btn btn-sm">
+    <a
+      href={url}
+      target="_blank"
+      rel="noreferrer"
+      className="btn btn-sm text-link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-2"
+    >
       {label}
     </a>
   );
 }
 
 export default function ProjectCard({ project }) {
-  const [firstImage] = project.images;
-
-  let statusMessage = null;
-  if (project.projectStatus.message) {
-    statusMessage = <p>{project.projectStatus.message}</p>;
-  }
-
   const liveLink = renderActionLink(project.links.live, "Live");
   const sourceLink = renderActionLink(project.links.source, "Source");
 
   return (
-    <article className="card card-lg card-side w-full bg-brand-tertiary/10 shadow-sm">
+    <article className="card card-lg w-full border border-border-subtle bg-surface-card shadow-sm">
+      <figure className="w-full">
+        <img
+          src={project.coverImage.src}
+          alt={project.coverImage.alt}
+          className="mx-auto h-auto max-w-full"
+        />
+      </figure>
       <div className="card-body min-w-0">
-        <h3 className="card-title">{project.title}</h3>
+        <h3 className="card-title font-heading text-project-title font-bold text-surface-emphasis">
+          {project.title}
+        </h3>
         <p>{project.summary}</p>
         <p>Technologies: {project.technologies.join(", ")}</p>
-        <p>Status: {project.projectStatus.type}</p>
-        {statusMessage}
         <div className="card-actions mt-2">
           <Link
             to={`/projects/${project.slug}`}
-            className="btn btn-sm btn-primary"
+            className="btn btn-sm btn-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-offset-2"
           >
             Details
           </Link>
@@ -43,13 +48,6 @@ export default function ProjectCard({ project }) {
           {sourceLink}
         </div>
       </div>
-      <figure className="aspect-video w-1/2 min-w-0 shrink-0 overflow-hidden">
-        <img
-          src={firstImage.src}
-          alt={firstImage.alt}
-          className="h-full w-full object-contain"
-        />
-      </figure>
     </article>
   );
 }
