@@ -10,12 +10,19 @@ import pddCardThumb from "../assets/images/projects/pest-degree-day-calculator/m
 const projects = [
   {
     slug: "ttgcollector",
-    title: "TTGCollector",
+    title: "Table Top Game Library",
     featured: true,
     summary:
       "Keep an electronic library of your board games and their expansions. Find what to play next based on play style, number of players, themes, and more.",
     role: "Sole Developer",
-    technologies: ["PostgreSQL", "Node.js", "Express.js", "React.js"],
+    technologies: [
+      "PostgreSQL",
+      "Node.js",
+      "Express.js",
+      "React.js",
+      "BoardGameGeek API",
+      "REST",
+    ],
     features: [
       "Build and manage a personal board-game and expansion library.",
       "Retrieve game details from BoardGameGeek to add games to your collection quickly with complete information.",
@@ -65,7 +72,15 @@ const projects = [
     summary:
       "Help thousands of Illinois farmers interpret historical pest activity and make better-informed decisions about future pest conditions.",
     role: "Primary Developer",
-    technologies: ["Microsoft SQL Server", "ASP.NET", "JavaScript"],
+    technologies: [
+      "Microsoft SQL Server",
+      "ASP.NET",
+      "JavaScript",
+      "ArcGIS",
+      "NOAA API",
+      "Python",
+      "SOAP",
+    ],
     features: [
       "Explore common and specialty Midwest crop pests across all Illinois data-collection stations.",
       "Interpret a decade of PRI pest-activity data through interactive visualizations.",

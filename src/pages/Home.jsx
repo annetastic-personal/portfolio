@@ -1,14 +1,16 @@
-import React from "react";
 import projects from "../data/projects";
 import ProjectCard from "../components/projects/ProjectCard";
 
 export default function Home() {
+  const ttgcollector = projects.find((p) => p.slug === "ttgcollector");
+  const pestDegreeDay = projects.find(
+    (p) => p.slug === "pest-degree-day-calculator",
+  );
+
   return (
-    <main className="min-h-screen py-16 text-text-primary">
+    <main className="min-h-screen py-16">
       <section className="mx-auto max-w-[48ch]">
-        <h1 className="mb-4 font-heading text-page-title font-bold text-text-primary">
-          Anne Odom
-        </h1>
+        <h1 className="mb-4">Anne Odom</h1>
         <p className="text-lg font-medium text-text-secondary">
           Full-Stack Web and Application Developer
         </p>
@@ -17,22 +19,31 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="mx-auto mt-6 max-w-prose text-text-primary">
-        I create human-centered technology that frees people to focus on the
-        things only people can do. As a full-stack web and application
-        developer, I build practical tools for research, operations,
-        entertainment, <a href="">sample link</a> and decision-making. I enjoy learning from people with
-        different perspectives and combining that curiosity with my experience
-        in data systems and user-facing applications to make complex problems
-        more approachable and information more useful.
+      <section className="home-section grid grid-cols-1 gap-6 md:grid-cols-2">
+        <div className="flex h-full items-center justify-end text-4xl leading-[3.5rem] text-right text-text-primary">
+          Creating <span className="home-key-word">human</span>-centered
+          technology that frees <span className="home-key-word">people</span>{" "}
+          to focus on the things only{" "}
+          <span className="home-key-word">people</span> can do.
+        </div>
+        <ProjectCard project={ttgcollector} className="justify-self-start" />
       </section>
 
-      <section className="mx-auto mt-6 max-w-5xl">
-        <div className="flex w-full flex-col gap-6">
-          {projects.map((project) => (
-            <ProjectCard key={project.slug} project={project} />
-          ))}
+      <section className="home-section grid grid-cols-1 gap-6 md:grid-cols-2">
+        <ProjectCard project={pestDegreeDay} className="justify-self-end" />
+        <div className="flex h-full items-center justify-start text-left text-5xl leading-[3.5rem] text-text-primary">
+          Building practical tools for research, operations, entertainment, and
+          decision-making.
         </div>
+      </section>
+
+      <section className="home-section">
+        <div className="flex h-full items-center justify-center text-center">
+          I enjoy learning from people with different perspectives and combining that curiosity with my experience in data systems and user-facing
+          applications to make complex problems more approachable and information more useful.
+        </div>
+        <h2 className="mb-4">Skills</h2>
+        <div></div>
       </section>
     </main>
   );
