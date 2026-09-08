@@ -9,11 +9,11 @@ import SiteHeader from "./components/layout/SiteHeader";
 function App() {
   return (
     <Router>
-      <SiteHeader />
       <MainContainer>
+        <SiteHeader />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element = { <About />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </MainContainer>
     </Router>
