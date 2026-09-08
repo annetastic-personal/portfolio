@@ -9,38 +9,49 @@ export default function Home() {
 
   return (
     <main className="min-h-screen py-16">
-      <section className="mx-auto max-w-[48ch]">
-        <h1 className="mb-4">Anne Odom</h1>
-        <p className="text-lg font-medium text-text-secondary">
-          Full-Stack Web and Application Developer
-        </p>
-        <p className="mt-2 text-surface-emphasis">
-          Live curious. Create with compassion. Bring joy.
-        </p>
-      </section>
-
-      <section className="home-section grid grid-cols-1 gap-6 md:grid-cols-2">
-        <div className="flex h-full items-center justify-end text-4xl leading-[3.5rem] text-right text-text-primary">
-          Creating <span className="home-key-word">human</span>-centered
-          technology that frees <span className="home-key-word">people</span>{" "}
-          to focus on the things only{" "}
-          <span className="home-key-word">people</span> can do.
+      <section className="home-section home-project-row mt-0 pt-0">
+        <div className="home-statement justify-end text-right">
+          <p className="font-bold">
+            <span className="block">Creating</span>
+            <span className="block">
+              <span className="home-keyword">human</span>
+              -centered
+            </span>
+            <span className="block">technology</span>
+            <span className="block">
+              that frees <span className="home-keyword">people</span>
+            </span>
+            <span className="block">to focus on the things</span>
+            <span className="block">
+              only <span className="home-keyword">people</span> can do
+            </span>
+          </p>
         </div>
         <ProjectCard project={ttgcollector} className="justify-self-start" />
       </section>
 
-      <section className="home-section grid grid-cols-1 gap-6 md:grid-cols-2">
+      <section className="home-section home-project-row">
         <ProjectCard project={pestDegreeDay} className="justify-self-end" />
-        <div className="flex h-full items-center justify-start text-left text-5xl leading-[3.5rem] text-text-primary">
-          Building practical tools for research, operations, entertainment, and
-          decision-making.
+        <div className="home-statement justify-start text-left">
+          <p className="font-bold">
+            <span className="block">
+              Building <span className="home-keyword">practical</span>{" "}
+              <span className="home-keyword">tools</span>
+            </span>
+            <span className="block">for research,</span>
+            <span className="block">operations,</span>
+            <span className="block">entertainment,</span>
+            <span className="block">and decision-making</span>
+          </p>
         </div>
       </section>
 
       <section className="home-section">
-        <div className="flex h-full items-center justify-center text-center">
-          I enjoy learning from people with different perspectives and combining that curiosity with my experience in data systems and user-facing
-          applications to make complex problems more approachable and information more useful.
+        <div className="mx-auto flex h-full max-w-prose items-center justify-center text-2xl text-center">
+          I enjoy learning from people with different perspectives and combining
+          that curiosity with my experience in data systems and user-facing
+          applications to make complex problems more approachable and
+          information more useful.
         </div>
         <h2 className="mb-4">Skills</h2>
         <div></div>

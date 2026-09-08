@@ -22,7 +22,7 @@ export default function ProjectCard({ project, className = "" }) {
 
   return (
     <article
-      className={`card w-full max-w-xs rounded-none bg-page-background shadow-2xl shadow-black/40 ${className}`}
+      className={`card w-full max-w-sm rounded-none bg-page-background shadow-2xl shadow-black/40 ${className}`}
     >
       <h3 className="card-title px-4 pt-4 pb-4">
         {project.title}

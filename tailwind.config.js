@@ -31,6 +31,7 @@ module.exports = {
         "section-title": ["1.75rem", { lineHeight: "1.2" }],
         "page-title": ["2.5rem", { lineHeight: "1.1" }],
         "hero-title": ["3.5rem", { lineHeight: "1.05" }],
+        statement: ["2.25rem", { lineHeight: "3.5rem" }],
       },
       boxShadow: {
         soft: "0 4px 24px rgba(0, 0, 0, 0.08)",

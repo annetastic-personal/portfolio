@@ -38,11 +38,19 @@
 
 @layer components {
   .home-section {
-    @apply mx-auto mt-6 max-w-5xl;
+    @apply mx-auto mt-12 max-w-5xl pt-12;
   }
 
-  .home-key-word {
-    @apply text-[1.4em] text-action-primary;
+  .home-project-row {
+    @apply grid grid-cols-1 gap-12 md:grid-cols-2;
+  }
+
+  .home-statement {
+    @apply flex h-full items-start text-statement text-text-primary;
+  }
+
+  .home-keyword {
+    @apply text-[1.25em] font-extrabold text-action-secondary;
   }
 }
 
