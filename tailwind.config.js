@@ -4,15 +4,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          background: "#ffffff",
-          primary: "#2d033b",
-          secondary: "#6366f1",
-          tertiary: "#14b8a6",
-          accent: "#65a30d",
-          highlight: "#ff1fae",
-          text: "#6b6375",
-        },
         "page-background": "#ffffff",
         "text-primary": "#2d033b",
         "text-secondary": "#6b6375",

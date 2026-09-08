@@ -14,6 +14,36 @@
   a:not(.btn):focus-visible {
     @apply rounded-sm decoration-2 underline-offset-4 outline-none ring-2 ring-focus ring-offset-2;
   }
+
+  .btn:focus-visible {
+    @apply outline-none ring-2 ring-focus ring-offset-2;
+  }
+
+  h1 {
+    @apply font-heading text-page-title font-bold text-text-primary;
+  }
+
+  h2 {
+    @apply font-heading text-section-title font-bold text-surface-footer;
+  }
+
+  h3 {
+    @apply font-heading text-project-title font-bold text-surface-emphasis;
+  }
+
+  h4 {
+    @apply font-heading font-bold text-text-primary;
+  }
+}
+
+@layer components {
+  .home-section {
+    @apply mx-auto mt-6 max-w-5xl;
+  }
+
+  .home-key-word {
+    @apply text-[1.4em] text-action-primary;
+  }
 }
 
 :root {
@@ -54,7 +84,7 @@
 body {
   margin: 0;
   @apply bg-page-background;
-  @apply font-sans text-body font-normal;
+  @apply font-sans text-body font-normal text-text-primary;
 }
 
 #root {
