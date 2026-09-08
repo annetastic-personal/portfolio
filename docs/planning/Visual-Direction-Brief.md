@@ -2,7 +2,7 @@
 
 ## Status
 
-Working brief for the September 10 employment-portfolio MVP. Confirmed decisions and starting values are recorded below; validate them against real content and rendered layouts as the site develops.
+Working brief for the September 10 employment-portfolio MVP. Confirmed decisions and starting values are recorded below. The current project-card appearance and content are settled and should be treated as the visual source of truth for the MVP.
 
 ## 1. Visual Thesis and Keywords
 
@@ -165,7 +165,7 @@ Inspiration reference:
 Confirmed direction:
 
 - Present the summary blurb, skills, and two compact project cards on the main page.
-- Keep each project card focused on the project name, short summary, one screenshot, technical skills used, and links to further details.
+- Keep each project card focused on the project name, one screenshot, technical skills used, and a labeled link to the project-details page.
 - Provide visible email and professional links.
 - Maintain clear hierarchy, consistent spacing, and stable layouts across desktop, tablet, and mobile.
 
@@ -188,22 +188,23 @@ Starting component treatments:
 
 | Decision                   | Starting treatment                                                                                     | Why                                                                                 |
 | -------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------- |
-| Card background            | `surface-card` (`#e0d9e2`)                                                                             | Separates cards from the white page while keeping the palette quiet.                |
-| Border                     | `1px solid border-subtle`                                                                              | Gives each card a reliable boundary without relying on the lavender fill alone.     |
-| Radius                     | `0.5rem` / `8px`                                                                                       | Adds warmth while keeping the card crisp and restrained.                            |
-| Shadow                     | None by default; use only a very soft shadow if needed                                                 | Preserves the editorial feel and avoids a floating-dashboard look.                  |
-| Card padding               | Shared spacing rule starting around `1.5rem`                                                           | Creates consistent internal breathing room without one-off tuning.                  |
-| Primary action             | `action-primary` for the details action; `action-secondary` for supporting actions                     | Makes the project-details path primary while keeping live/source links independent. |
+| Card background            | `page-background` (`#ffffff`)                                                                          | Keeps the card visually quiet and lets the screenshot, typography, and shadow provide its emphasis. |
+| Border                     | None                                                                                                   | Preserves the current clean card silhouette and avoids adding a second boundary treatment. |
+| Radius                     | `0` (square corners)                                                                                   | Reinforces a crisp, editorial card shape rather than a softened one.                |
+| Shadow                     | Pronounced black shadow (`shadow-2xl` with black opacity)                                              | Gives cards clear visual separation and depth against the white page.               |
+| Card width                 | Full available width up to a compact maximum (`max-w-xs`)                                             | Keeps the vertical card proportionate and prevents the project preview from becoming too wide. |
+| Card content               | Title, cover image, technology list, and one `See More` project-details link                         | Keeps the card concise and establishes the details page as the next step without duplicating project copy. |
+| Card padding               | Local horizontal padding with tighter title and body spacing                                           | Matches the current vertical composition and keeps the screenshot aligned with the text. |
+| Primary action             | Text link labeled `See More`                                                                            | Provides one clear, independent path to the project-details page.                    |
 | Links                      | `link` color with persistent underline                                                                 | Keeps link identity clear and accessible.                                           |
-| Technology indicators      | Compact text badges with restrained borders or pale tints                                              | Keeps technical metadata scannable without making every technology visually loud.   |
-| Screenshot ratio           | Start around `16:10` or `3:2` in a stable frame                                                        | Shows useful application detail while keeping cards visually consistent.            |
-| Screenshot crop            | Preserve the full image where possible; crop only intentionally                                        | Protects screenshots as evidence of the actual work.                                |
-| Captions                   | Show only when they add context; always keep meaningful alt text                                       | Avoids duplicate copy while preserving interpretation and accessibility.            |
+| Technology indicators      | Italic, teal technology text separated from the card content by a teal top rule                      | Keeps the technical metadata compact while giving the lower card area a clear visual anchor. |
+| Screenshot sizing           | Preserve the cover image's natural aspect ratio and constrain it to the card width                   | Avoids cropping or distortion and lets each project screenshot remain evidence of the actual work. |
+| Captions                   | No visible caption; keep meaningful alt text                                                         | Avoids duplicate copy while preserving interpretation and accessibility.            |
 | Hover state                | Small elevation or border/accent change without dramatic movement                                      | Adds feedback without making cards unstable.                                        |
 | Pressed state              | Slight elevation reduction or border adjustment                                                        | Confirms interaction without shifting the layout.                                   |
 | Disabled/unavailable state | Clear status label with muted treatment; keep project information accessible                           | Communicates availability without hiding or presenting a broken project.            |
 | Focus state                | Follow section 4’s visible focus rule                                                                  | Keeps keyboard behavior consistent across the site.                                 |
-| Bright accents             | Use for labels, borders, small rules, and selected actions; keep `surface-card` as the main background | Preserves whimsy without making every card visually loud.                           |
+| Bright accents             | Use for the technology rule/text and the selected action while keeping the card white                 | Preserves whimsy without making every card visually loud.                           |
 
 Validate these starting treatments during implementation and adjust them only when real content, contrast, or interaction behavior demonstrates a need.
 

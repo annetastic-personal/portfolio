@@ -45,18 +45,20 @@ This schedule prioritizes the MVP acceptance criteria: a polished main page, at 
 ### Completion Check
 
 - [x] Confirm the TTGCollector card renders on the main page with working details/live/source actions.
-- [ ] Confirm resume, contact, and skills are visible on the main page.
-- [ ] Note whether navigation/header/footer were completed today or deferred, and to which day.
+- [ ] Confirm resume, contact, and skills are visible on the main page. (Not completed Sunday; rolled forward to Tuesday, September 8.)
+- [ ] Note whether navigation/header/footer were completed today or deferred, and to which day. (Not completed Sunday; rolled forward to Tuesday, September 8.)
 
 ## Monday, September 7 (6-8 hours)
 
+**Update:** Session work on Monday went to visual/card polish (vertical card layout, cover images, image sizing) instead of these goals. None of the goals below were completed; all are rescheduled to Tuesday, September 8.
+
 ### Goals
 
-- [ ] If navigation/header/footer were deferred from Sunday, complete them first (budget ~30-45 minutes) before starting routing work.
-- [ ] Configure client-side routing with stable URLs under `/projects/{project-slug}`.
-- [ ] Build the reusable project-details page structure.
-- [ ] Complete the TTGCollector project-details page, including purpose, features, technologies, architecture, contributions, screenshots, and available links.
-- [ ] Confirm direct navigation and refresh behavior for the TTGCollector route in the local production preview.
+- [ ] If navigation/header/footer were deferred from Sunday, complete them first (budget ~30-45 minutes) before starting routing work. **(moved to Tuesday, September 8)**
+- [ ] Configure client-side routing with stable URLs under `/projects/{project-slug}`. **(moved to Tuesday, September 8)**
+- [ ] Build the reusable project-details page structure. **(moved to Tuesday, September 8)**
+- [ ] Complete the TTGCollector project-details page, including purpose, features, technologies, architecture, contributions, screenshots, and available links. **(moved to Tuesday, September 8)**
+- [ ] Confirm direct navigation and refresh behavior for the TTGCollector route in the local production preview. **(moved to Tuesday, September 8)**
 
 ### Completion Check
 
@@ -65,22 +67,36 @@ This schedule prioritizes the MVP acceptance criteria: a polished main page, at 
 
 ## Tuesday, September 8 (4 hours)
 
+**Update:** Goals below now include everything rescheduled from Sunday and Monday, in addition to Tuesday's original goals. This day is significantly overloaded for its original 4-hour budget; expect overflow into Wednesday.
+
 ### Goals
 
+- [ ] Rolled forward from Sunday: add the skills, contact, and resume/profile link areas to the main page.
+- [ ] Rolled forward from Monday: if navigation/header/footer are still incomplete, complete them first (budget ~30-45 minutes).
+- [ ] Rolled forward from Monday: configure client-side routing with stable URLs under `/projects/{project-slug}`.
+- [ ] Rolled forward from Monday: build the reusable project-details page structure.
+- [ ] Rolled forward from Monday: complete the TTGCollector project-details page, including purpose, features, technologies, architecture, contributions, screenshots, and available links.
+- [ ] Rolled forward from Monday: confirm direct navigation and refresh behavior for the TTGCollector route in the local production preview.
 - [ ] Complete the Pest Degree Day Calculator project-details page to the same content and quality standard.
 - [ ] Add final project images with meaningful alternative text.
-- [ ] Implement a visitor-controlled, keyboard-accessible image gallery only where multiple images improve a project page.
-- [ ] Add friendly, informative unavailable-live-application messaging where required.
+- [ ] Implement a visitor-controlled, keyboard-accessible image gallery only where multiple images improve a project page. **(moved to Wednesday, September 9)**
+- [ ] Add friendly, informative unavailable-live-application messaging where required. **(moved to Wednesday, September 9)**
 
 ### Completion Check
 
+- [ ] Confirm resume, contact, skills, and navigation/header/footer are visible on the main page.
+- [ ] Confirm TTGCollector is complete, readable, and accessible at its shareable project URL, with working routing and direct-navigation/refresh behavior.
 - [ ] Confirm both featured projects meet the required project-content criteria and have working details routes.
-- [ ] Confirm images load, have meaningful alt text, and galleries do not rotate automatically.
 
-## Wednesday, September 9 (4 hours)
+## Wednesday, September 9 (6-8 hours)
+
+**Update:** Expanded from 4 hours to 6-8 hours to absorb any goals not finished on Tuesday, September 8, in addition to Wednesday's original goals below.
 
 ### Goals
 
+- [ ] Complete any goals carried over from Tuesday, September 8, before starting the goals below.
+- [ ] Rolled forward from Tuesday: implement a visitor-controlled, keyboard-accessible image gallery only where multiple images improve a project page.
+- [ ] Rolled forward from Tuesday: add friendly, informative unavailable-live-application messaging where required.
 - [ ] Decide whether the Excel sheet parser is presentation-ready; add it only if it does not delay the two-project MVP.
 - [ ] Complete responsive layout work for desktop, tablet, and mobile widths.
 - [ ] Perform the accessibility and content review: keyboard navigation, focus visibility, link labels, contrast, heading structure, copy, and layout overflow. If navigation/header/footer polish was deferred earlier in the week, finish it as part of this review.
@@ -89,6 +105,7 @@ This schedule prioritizes the MVP acceptance criteria: a polished main page, at 
 
 ### Completion Check
 
+- [ ] Confirm images load, have meaningful alt text, and galleries do not rotate automatically.
 - [ ] Confirm the two-project MVP meets the acceptance criteria locally.
 - [ ] Confirm any third project is included only when its page, images, links, and content are presentation-ready.
 
