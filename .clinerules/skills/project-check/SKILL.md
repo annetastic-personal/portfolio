@@ -1,6 +1,6 @@
 ---
 name: project-check
-description: "Use when the user says project check or asks for a progress review of the portfolio implementation plan, visual direction brief, timeline, and codebase. Report findings only; never make changes."
+description: "Use when the user says project check or asks for a progress review of the portfolio implementation plan, visual direction brief, end-of-days MVP checklist, and codebase. Report findings only; never make changes."
 ---
 
 # Project Check
