@@ -13,7 +13,7 @@ Read these files first:
 
 - `C:\source\repos\portfolio\docs\planning\Implementation-Plan.md`
 - `C:\source\repos\portfolio\docs\planning\Visual-Direction-Brief.md`
-- `C:\source\repos\portfolio\docs\progress-checklists\timeline.md`
+- `C:\source\repos\portfolio\docs\progress-checklists\End-of-Days.md`
 
 Then review the relevant portfolio codebase, including source files, configuration, assets, tests, and documentation needed to verify the claims in those documents. Use the current repository state as evidence. Do not infer completion from the planning documents alone.
 
@@ -28,6 +28,8 @@ Then review the relevant portfolio codebase, including source files, configurati
    - **Blocked or at risk**: dependent on an unresolved issue, unavailable resource, deadline constraint, or contradictory requirement.
 4. Identify mismatches between the documents and the implementation, stale timeline entries, missing acceptance criteria, and risks to the MVP deadline.
 5. Recommend the single highest-priority next task. Base it on MVP impact, dependencies, deadline risk, and the evidence found during the review.
+6. Do not run builds
+7. Do not read external websites
 
 ## Report Format
 
