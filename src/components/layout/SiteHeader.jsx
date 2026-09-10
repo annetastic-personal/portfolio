@@ -1,17 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function SiteHeader() {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
   return (
-    <header className="mx-auto w-full max-w-5xl pb-8">
+    <header className="mx-auto w-full max-w-[72rem] pb-8">
       <section>
-        <h1 className="mb-4">Anne Odom</h1>
+        {isHomePage ? (
+          <h1 className="site-identity mb-4">Anne Odom</h1>
+        ) : (
+          <p className="site-identity mb-4">Anne Odom</p>
+        )}
         <h2 className="text-action-secondary">
           Full-Stack Web and Application Developer
         </h2>
         <div className="mt-4 grid grid-cols-2 items-start gap-4 border-t border-border-emphasis pt-2">
-          <h3 className="text-surface-emphasis">
+          <p className="font-heading text-project-title font-bold text-surface-emphasis">
             Live curious. Create with compassion. Bring joy.
-          </h3>
+          </p>
           <nav className="flex justify-end gap-4 text-right">
             <Link to="/">Home</Link>
             <Link to="/about">About Me</Link>

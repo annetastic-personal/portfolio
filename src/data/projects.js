@@ -4,8 +4,10 @@ import ttgSearchForm from "../assets/images/projects/ttgcollector/bggsearchform.
 import ttgDetailsForm from "../assets/images/projects/ttgcollector/bggdetailsform.png";
 import pddSinglePest from "../assets/images/projects/pest-degree-day-calculator/single-pest.png";
 import pddMap from "../assets/images/projects/pest-degree-day-calculator/map-sample.png";
-import ttgCardThumb from "../assets/images/projects/ttgcollector/main-page-thumb.png";
-import pddCardThumb from "../assets/images/projects/pest-degree-day-calculator/map-thumbnail.png";
+import ttgCardThumb from "../assets/images/projects/ttgcollector/eaten.png";
+import pddCardThumb from "../assets/images/projects/pest-degree-day-calculator/corn-flea-beetle-map-for-flattening.gif";
+import pddChoosePest from "../assets/images/projects/pest-degree-day-calculator/choose-pest.png"
+
 
 const projects = [
   {
@@ -13,7 +15,7 @@ const projects = [
     title: "Table Top Game Library",
     featured: true,
     summary:
-      "Keep an electronic library of your board games and their expansions. Find what to play next based on play style, number of players, themes, and more.",
+      "An electronic library of your board games and their expansions. Find what to play next based on play style, number of players, themes, and more.",
     role: "Sole Developer",
     technologies: [
       "PostgreSQL",
@@ -70,7 +72,7 @@ const projects = [
     title: "Pest Degree Day Calculator",
     featured: false,
     summary:
-      "Help thousands of Illinois farmers interpret historical pest activity and make better-informed decisions about future pest conditions.",
+      "Helps thousands of Illinois farmers interpret historical pest activity and make better-informed decisions about future pest conditions.",
     role: "Primary Developer",
     technologies: [
       "Microsoft SQL Server",
@@ -96,6 +98,10 @@ const projects = [
       alt: "Web page displaying a heat map of past activity",
     },
     images: [
+      {
+        src: pddChoosePest,
+        alt: "Web page displaying the state of Illinois with all data collection stations marked, and drop-down boxes for choosing desired station and pest",
+      },
       {
         src: pddSinglePest,
         alt: "Web page displaying data for Western Bean Cutworm with graph showing pest degree day trends from April 2026 through September 3rd 2026, with context regarding where in IL data was collected, what expected pest degree days should be based on historical context ",
