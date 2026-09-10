@@ -212,15 +212,15 @@ Validate these starting treatments during implementation and adjust them only wh
 
 Starting site-shell treatments:
 
-| Decision          | Starting treatment                                                                                 | Why                                                                                      |
-| ----------------- | -------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Header layout     | Compact white header with identity on the left and primary navigation on the right                 | Keeps the site shell useful without competing with the summary or projects.              |
-| Header behavior   | Normal document flow; consider sticky behavior only if the finished page is long enough to benefit | Avoids covering content and preserves the simple editorial structure.                    |
-| Navigation        | `Home`, `About`, `Projects`, and `Resume`, with resume visually emphasized                         | Supports recruiter scanning and keeps the information architecture direct.               |
-| Mobile navigation | Menu button that opens a vertical list of the same links                                           | Preserves the desktop structure without squeezing links into a narrow row.               |
-| Footer            | `surface-footer` indigo with email, GitHub, LinkedIn, resume, and a short site note                | Provides a clear final contact point without a contact form.                             |
-| Tagline placement | One prominent appearance near the summary or About area; optional subtle footer reuse              | Gives the values emotional visibility without repeating the slogan throughout the shell. |
-| Accessibility     | Use section 4’s focus, expanded-state, link, and contrast rules                                    | Keeps site-shell behavior consistent with the rest of the interface.                     |
+| Decision          | Starting treatment                                                                                 | Why                                                                                                      |
+| ----------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Header layout     | Compact white header with identity on the left and primary navigation on the right                 | Keeps the site shell useful without competing with the summary or projects.                              |
+| Header behavior   | Normal document flow; consider sticky behavior only if the finished page is long enough to benefit | Avoids covering content and preserves the simple editorial structure.                                    |
+| Navigation        | `Home` and `About` as the primary site navigation                                                  | Keeps the shell focused while project and resume access remain available in page content and the footer. |
+| Mobile navigation | Use the same small set of primary links in a responsive layout                                     | Preserves the simple structure without adding standalone Projects or Resume navigation items.            |
+| Footer            | `surface-footer` indigo with email, GitHub, LinkedIn, resume, and a short site note                | Provides a clear final contact point without a contact form.                                             |
+| Tagline placement | One prominent appearance near the summary or About area; optional subtle footer reuse              | Gives the values emotional visibility without repeating the slogan throughout the shell.                 |
+| Accessibility     | Use section 4’s focus, expanded-state, link, and contrast rules                                    | Keeps site-shell behavior consistent with the rest of the interface.                                     |
 
 Validate these starting treatments during implementation and adjust them only when content, responsive behavior, or accessibility demonstrates a need.
 

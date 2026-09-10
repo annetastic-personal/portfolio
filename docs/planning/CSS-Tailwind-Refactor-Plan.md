@@ -19,6 +19,7 @@ Consolidate on Tailwind's config (`tailwind.config.js`) as the single source of 
 5. Configure `theme.extend.fontFamily` in `tailwind.config.js` for the `--sans`/`--heading`/`--mono` stacks; replace `font-family: var(...)` usages with `font-sans`/`font-mono` utility classes.
 6. Consider replacing the global `a`/`code` base styling with an `@layer base` block using Tailwind's `@apply` and brand tokens (e.g. `@apply text-brand-tertiary underline;`) instead of raw CSS variables, so link/code styling still derives from the Tailwind theme even though it needs to remain a global rule (Preflight strips default anchor/code styling and there's no per-element JSX to attach classes to for every link).
 7. Decide whether to configure Tailwind's `dark:` variant support (`darkMode` config) to replace the existing `@media (prefers-color-scheme: dark)` variable block, if/when dark theme support is picked back up (currently deferred per the main Implementation Plan).
+8. Remove unused template CSS, stale Tailwind safelist entries, undefined CSS-variable references, and redundant global heading overrides after the MVP layout is stable.
 
 ## Out of Scope for This Plan
 
