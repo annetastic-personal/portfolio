@@ -26,8 +26,8 @@ permissions:
 
 jobs:
   deploy:
-    # Use an internal self-hosted runner that can reach the private server.
-    runs-on: [self-hosted, linux, ARM64, deploy-lan]
+    # Use github-hosted runner, this is github's OS
+    runs-on: ubuntu-latest
 
     steps:
       # Pull repository contents into the runner workspace.

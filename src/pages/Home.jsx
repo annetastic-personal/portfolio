@@ -9,6 +9,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen pt-8 pb-16">
+      boop
       <section className="home-section home-project-row mt-0 pt-0">
         <div className="home-statement max-w-prose justify-end text-right md:items-center">
           <p className="font-bold">
