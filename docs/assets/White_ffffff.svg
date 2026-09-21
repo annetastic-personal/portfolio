@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="20" viewBox="0 0 48 20" role="img" aria-labelledby="title desc">
+  <title id="title">White swatch</title>
+  <desc id="desc">White, hex ffffff.</desc>
+  <rect width="48" height="20" fill="#ffffff" stroke="#6b6375" />
+</svg>

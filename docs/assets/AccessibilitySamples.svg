@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="430" viewBox="0 0 760 430" role="img" aria-labelledby="title desc">
+  <title id="title">Accessibility role samples</title>
+  <desc id="desc">Sample text demonstrations for primary text, supporting text, card text, links, keyboard focus, and bright surfaces on a white background.</desc>
+  <rect width="760" height="430" fill="#ffffff" />
+  <style>
+    .label { font: 700 16px "Trebuchet MS", "Segoe UI", sans-serif; fill: #2d033b; }
+    .sample { font: 400 22px "Trebuchet MS", "Segoe UI", sans-serif; }
+    .small { font: 400 14px "Trebuchet MS", "Segoe UI", sans-serif; fill: #6b6375; }
+  </style>
+  <text x="24" y="34" class="label">Accessibility role samples</text>
+  <text x="24" y="60" class="small">White background; visual examples support the text rules in the table.</text>
+
+  <text x="24" y="104" class="label">Main text</text>
+  <text x="250" y="104" class="sample" fill="#2d033b">Sample text</text>
+
+  <text x="24" y="154" class="label">Supporting text</text>
+  <text x="250" y="154" class="sample" fill="#6b6375">Sample text</text>
+
+  <text x="24" y="204" class="label">Card text</text>
+  <rect x="250" y="175" width="250" height="42" rx="4" fill="#e0d9e2" stroke="#6b6375" />
+  <text x="270" y="203" class="sample" fill="#2d033b">Sample text</text>
+
+  <text x="24" y="254" class="label">Link</text>
+  <text x="250" y="254" class="sample" fill="#ff1fae" text-decoration="underline">Sample text</text>
+
+  <text x="24" y="304" class="label">Keyboard focus</text>
+  <rect x="246" y="273" width="183" height="42" rx="4" fill="#ffffff" stroke="#2d033b" stroke-width="2" />
+  <text x="270" y="301" class="sample" fill="#2d033b">Sample text</text>
+
+  <text x="24" y="354" class="label">Bright surface</text>
+  <rect x="250" y="325" width="250" height="42" rx="4" fill="#14b8a6" stroke="#6b6375" />
+  <text x="270" y="353" class="sample" fill="#2d033b">Sample text</text>
+  <text x="520" y="353" class="small">text pairing to validate</text>
+
+  <text x="24" y="405" class="small">Starting visual reference only; validate contrast in the rendered interface.</text>
+</svg>

@@ -1,6 +1,44 @@
-console.log("Loaded tailwind.config.js");
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
+  plugins: [require("daisyui")],
+  theme: {
+    extend: {
+      colors: {
+        "page-background": "#ffffff",
+        "text-primary": "#2d033b",
+        "text-secondary": "#6b6375",
+        "surface-header": "#ffffff",
+        "surface-footer": "#4338ca",
+        "surface-emphasis": "#0f766e",
+        "surface-card": "#e0d9e2",
+        "action-primary": "#65a30d",
+        "action-secondary": "#4338ca",
+        link: "#ff1fae",
+        focus: "#2d033b",
+        "border-subtle": "#6b6375",
+        "border-emphasis": "#0f766e",
+      },
+      fontFamily: {
+        sans: ['"Trebuchet MS"', '"Segoe UI"', "sans-serif"],
+        heading: ['"Trebuchet MS"', '"Segoe UI"', "sans-serif"],
+        mono: ["Consolas", "Monaco", '"Courier New"', "monospace"],
+      },
+      fontSize: {
+        body: ["1rem", { lineHeight: "1.6" }],
+        supporting: ["0.875rem", { lineHeight: "1.4" }],
+        "link-size": ["1.0625rem", { lineHeight: "1.5" }],
+        "project-title": ["1.25rem", { lineHeight: "1.25" }],
+        "project-section": ["1.5rem", { lineHeight: "1.2" }],
+        "section-title": ["1.75rem", { lineHeight: "1.2" }],
+        "page-title": ["2.5rem", { lineHeight: "1.1" }],
+        "hero-title": ["3.5rem", { lineHeight: "1.05" }],
+        statement: ["2.25rem", { lineHeight: "3.5rem" }],
+      },
+      boxShadow: {
+        soft: "0 4px 24px rgba(0, 0, 0, 0.08)",
+      },
+    },
+  },
   safelist: [
     "bg-white",
     "rounded-2xl",
