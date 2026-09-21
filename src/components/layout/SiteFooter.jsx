@@ -25,7 +25,7 @@ export default function SiteFooter() {
               LinkedIn
             </a>
             <a
-              href="/RESUME-FullStackFocus.pdf"
+              href="/afodom-resume.pdf"
               download="Anne-Odom-Resume.pdf"
               className="footer-link"
             >
