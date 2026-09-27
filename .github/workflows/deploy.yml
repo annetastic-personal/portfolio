@@ -1,4 +1,4 @@
-name: Deploy To Personal Server
+name: Deploy To Dreamhost
 
 # How to adapt this workflow for another project:
 # 1) Change trigger branch under on.push.branches.
