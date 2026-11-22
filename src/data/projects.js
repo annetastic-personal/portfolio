@@ -60,11 +60,12 @@ const projects = [
     ],
     links: {
       live: "",
-      source: "",
+      source: "https://github.com/annetastic-personal/TTGCollector",
     },
     projectStatus: {
       type: "active",
-      message: "",
+      message:
+        "Currently undergoing refactoring and implementation of new key features. Look for a live link in the future. Meanwhile, check out the code on GitHub.",
     },
   },
   {
