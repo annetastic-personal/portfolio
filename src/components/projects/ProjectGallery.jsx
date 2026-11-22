@@ -11,10 +11,7 @@ export default function ProjectGallery({ project }) {
   }
 
   return (
-    <div
-      aria-label={`${project.title} project gallery`}
-      className="flex flex-col gap-3"
-    >
+    <div className="flex flex-col gap-3">
       <div className="project-gallery-frame">
         {slides.length > 1 && (
           <button
