@@ -39,7 +39,7 @@ export default function About() {
             <div className="max-w-3xl">
               <p>
                 I want to continue building practical, human-centered
-                applications surrounded by other folks who alsoy enjoy it and have
+                applications surrounded by other folks who also enjoy it and have
                 fun doing it together. I am especially interested in work that
                 combines full-stack development, data, and problem-solving in
                 service of research, operations, education, or other meaningful
@@ -59,7 +59,7 @@ export default function About() {
             <p className="mb-4">
               Created online applications and data models to enhance PRI’s
               efforts to research solutions for a society undergoing climate and
-              energy transitions
+              energy transitions.
             </p>
             <h3 className="mt-8 mb-2">Process Consultant</h3>
             <h4 className="mb-2">
@@ -77,7 +77,7 @@ export default function About() {
               Supported teams of up to 120 people suffering constant stress and
               pressure through video game design, development, beta releases,
               and delivery to market, by coaching, advising, listening, and
-              building community
+              building community.
             </p>
             <h3 className="mt-8 mb-2">Software Engineer</h3>
             <h4 className="mb-2">Pixo Tech</h4>
