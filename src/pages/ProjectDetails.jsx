@@ -1,6 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import projects from "../data/projects";
 import ProjectGallery from "../components/projects/ProjectGallery";
+import ProjectLinks from "../components/projects/ProjectLinks";
 
 export default function ProjectDetails() {
   const { projectSlug } = useParams();
@@ -58,9 +59,10 @@ export default function ProjectDetails() {
           </h2>
           <h3>Features</h3>
           <ProjectList items={project.features} />
-          <h3>See it Live</h3>
-          <p>Instructions for seeing it live</p>
         </section>
+      </div>
+      <div className="mt-12">
+        <ProjectLinks project={project} />
       </div>
       <section aria-labelledby="project-gallery-heading" className="mt-12">
         <div aria-label={`${project.title} screenshots`}>
