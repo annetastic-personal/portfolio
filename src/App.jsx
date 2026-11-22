@@ -11,6 +11,10 @@ import SiteFooter from "./components/layout/SiteFooter";
 function App() {
   return (
     <Router>
+      {/* Skip link: first focusable element so keyboard and screen-reader users can jump past the header straight to the main content. */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
       <MainContainer>
         <SiteHeader />
         <Routes>

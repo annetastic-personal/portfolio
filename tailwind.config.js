@@ -13,7 +13,7 @@ module.exports = {
         "surface-card": "#e0d9e2",
         "action-primary": "#65a30d",
         "action-secondary": "#4338ca",
-        link: "#ff1fae",
+        link: "#c71585",
         focus: "#2d033b",
         "border-subtle": "#6b6375",
         "border-emphasis": "#0f766e",

@@ -25,7 +25,7 @@ export default function ProjectDetails() {
   }
 
   return (
-    <main className="mx-auto min-h-screen max-w-5xl pt-4 pb-16">
+    <main id="main-content" tabIndex={-1} className="mx-auto min-h-screen max-w-5xl pt-4 pb-16">
       <Link to="/projects" className="mb-6 inline-block">
         ← All projects
       </Link>
@@ -65,9 +65,13 @@ export default function ProjectDetails() {
         <ProjectLinks project={project} />
       </div>
       <section aria-labelledby="project-gallery-heading" className="mt-12">
-        <div aria-label={`${project.title} screenshots`}>
-          <ProjectGallery project={project} />
-        </div>
+        <h2
+          id="project-gallery-heading"
+          className="project-section-heading mb-4"
+        >
+          Screenshots
+        </h2>
+        <ProjectGallery project={project} />
       </section>
     </main>
   );
