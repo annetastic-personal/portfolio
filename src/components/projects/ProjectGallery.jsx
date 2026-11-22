@@ -31,6 +31,8 @@ export default function ProjectGallery({ project }) {
           <img
             src={slides[activeIndex].src}
             alt={slides[activeIndex].alt}
+            width={slides[activeIndex].width}
+            height={slides[activeIndex].height}
             className="project-gallery-image"
           />
         </div>

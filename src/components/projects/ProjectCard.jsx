@@ -10,6 +10,8 @@ export default function ProjectCard({ project, className = "" }) {
         <img
           src={project.coverImage.src}
           alt={project.coverImage.alt}
+          width={project.coverImage.width}
+          height={project.coverImage.height}
           className="mx-auto h-auto max-w-full"
         />
       </figure>

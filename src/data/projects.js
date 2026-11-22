@@ -39,23 +39,33 @@ const projects = [
     coverImage: {
       src: ttgCardThumb,
       alt: "Web page displaying a board game and left-margin filter control",
+      width: 280,
+      height: 283,
     },
     images: [
       {
         src: ttgFullCollection,
         alt: "Web page displaying a collection of board games, with pictures for each game with filters in a left sidebar to simplify finding games to play",
+        width: 1156,
+        height: 1316,
       },
       {
         src: ttgFilteredCollection,
         alt: "Web page displaying a subset of games, filtered by player count, age, category, and game mechanic.",
+        width: 1600,
+        height: 1174,
       },
       {
         src: ttgSearchForm,
         alt: "Search form showing a search for a game and the resulting list of possible matches from BoardGameGeek",
+        width: 1600,
+        height: 882,
       },
       {
         src: ttgDetailsForm,
         alt: "Form for adding a game that includes all the details pulled in from BoardGameGeek, including description, category options, and game mechanic options. Labels in category and game mechanic fields are editable.",
+        width: 1288,
+        height: 1307,
       },
     ],
     links: {
@@ -97,19 +107,27 @@ const projects = [
     coverImage: {
       src: pddCardThumb,
       alt: "Web page displaying a heat map of past activity",
+      width: 168,
+      height: 220,
     },
     images: [
       {
         src: pddChoosePest,
         alt: "Web page displaying the state of Illinois with all data collection stations marked, and drop-down boxes for choosing desired station and pest",
+        width: 721,
+        height: 631,
       },
       {
         src: pddSinglePest,
         alt: "Web page displaying data for Western Bean Cutworm with graph showing pest degree day trends from April 2026 through September 3rd 2026, with context regarding where in IL data was collected, what expected pest degree days should be based on historical context ",
+        width: 929,
+        height: 992,
       },
       {
         src: pddMap,
         alt: "Web page displaying heat map of Brown Marmorated Stinkbug with photoperiod numbers marked by data collection station and context information for what that means for expected pest activity",
+        width: 932,
+        height: 1046,
       },
     ],
     links: {
