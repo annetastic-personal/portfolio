@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import projects from "../data/projects";
 import ProjectGallery from "../components/projects/ProjectGallery";
 
@@ -25,6 +25,9 @@ export default function ProjectDetails() {
 
   return (
     <main className="mx-auto min-h-screen max-w-5xl pt-4 pb-16">
+      <Link to="/projects" className="mb-6 inline-block">
+        ← All projects
+      </Link>
       <header className="mb-5">
         <h1>{project.title}</h1>
         <p>{project.summary}</p>

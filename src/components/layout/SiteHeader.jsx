@@ -21,6 +21,7 @@ export default function SiteHeader() {
           </p>
           <nav className="flex justify-end gap-4 text-right">
             <Link to="/">Home</Link>
+            <Link to="/projects">Projects</Link>
             <Link to="/about">About Me</Link>
           </nav>
         </div>
