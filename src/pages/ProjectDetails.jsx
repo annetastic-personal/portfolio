@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import projects from "../data/projects";
 import ProjectGallery from "../components/projects/ProjectGallery";
 import ProjectLinks from "../components/projects/ProjectLinks";
+import ProjectList from "../components/projects/ProjectList";
 
 export default function ProjectDetails() {
   const { projectSlug } = useParams();
@@ -12,17 +13,7 @@ export default function ProjectDetails() {
     return <p>Project not found.</p>;
   }
 
-  function ProjectList({ items, compact = false }) {
-    return (
-      <ul
-        className={`mb-4 list-disc pl-5 ${compact ? "space-y-0.5" : "space-y-2"}`}
-      >
-        {items.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
-    );
-  }
+
 
   return (
     <main id="main-content" tabIndex={-1} className="mx-auto min-h-screen max-w-5xl pt-4 pb-16">
