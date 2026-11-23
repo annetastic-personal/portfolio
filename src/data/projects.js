@@ -6,7 +6,7 @@ import pddSinglePest from "../assets/images/projects/pest-degree-day-calculator/
 import pddMap from "../assets/images/projects/pest-degree-day-calculator/map-sample.png";
 import ttgCardThumb from "../assets/images/projects/ttgcollector/eaten.png";
 import pddCardThumb from "../assets/images/projects/pest-degree-day-calculator/corn-flea-beetle-map-for-flattening.gif";
-import pddChoosePest from "../assets/images/projects/pest-degree-day-calculator/choose-pest.png"
+import pddChoosePest from "../assets/images/projects/pest-degree-day-calculator/choose-pest.png";
 
 
 const projects = [
@@ -73,7 +73,6 @@ const projects = [
       source: "https://github.com/annetastic-personal/TTGCollector",
     },
     projectStatus: {
-      type: "active",
       message:
         "Currently undergoing refactoring and implementation of new key features. Look for a live link in the future. Meanwhile, check out the code on GitHub.",
     },
@@ -135,7 +134,6 @@ const projects = [
       source: "",
     },
     projectStatus: {
-      type: "maintenance",
       message:
         "Developed by me and currently maintained by another developer. The public deployment is undergoing maintenance before the forecasting feature can be demonstrated. Screenshots show currently accessible parts of the application.",
     },
